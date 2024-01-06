@@ -1,0 +1,8 @@
+/* Definition of variables for colors */
+:root {
+  --color-black: #333;
+  --color-white: #fff;
+  --color-yellow: #ffd900;
+  --color-pink: #dd71c6;
+  --color-skyblue: #73c3f4;
+}

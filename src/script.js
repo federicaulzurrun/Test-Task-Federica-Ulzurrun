@@ -14,3 +14,11 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
   navbar.classList.remove('active');
 }));
+
+// Countdown
+const countdown = () => {
+  const countDate = new Date('January 30, 2024 09:53:00').getTime();
+  const now = new Date().getTime();
+  const remainingDays = countDate - now;
+
+};

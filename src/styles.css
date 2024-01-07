@@ -81,3 +81,54 @@
 .nav-log.active .bar:nth-child(3) {
   transform: rotate(45deg) translate(-5px, -5px);
 }
+
+/* Main Section */
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-family: var(--custom-baskerville-font);
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+}
+
+.spots {
+  font-family: var(--custom-montserrat-font);
+}
+
+.colored-text {
+  color: var(--color-pink);
+}
+
+.countdown-container {
+  background: linear-gradient(107.9deg, rgba(255, 255, 255, 0.51) 9.7%, rgba(255, 255, 255, 0.49) 88.76%);
+  box-shadow: 0px 4px 40px 0px #0000001A;
+}
+
+.countdown-item {
+  font-family: var();
+}
+
+.btn-pink {
+  color: var(--color-white);
+  background-color: var(--color-pink);
+  border: var(--color-pink);
+  font-family: var(--custom-montserrat-font);
+}
+
+.yellowBackground {
+  background-image: url(./assets/background-yellow.svg);
+  position: absolute;
+  right: -50%;
+  top: 0%;
+  height: 150%;
+  width: 100%;
+}

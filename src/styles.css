@@ -11,6 +11,8 @@
 
 * {
   font-family: var(--custom-montserrat-font);
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -32,6 +34,10 @@ body.active {
   z-index: 1;
 }
 
+.logoPage {
+  padding: 4% 2%;
+}
+
 .nav-menu {
   position: fixed;
   left: -115%;
@@ -50,7 +56,7 @@ body.active {
 .nav-menu.active {
   left: 0;
   margin-top: 50px;
-  width: 88%;
+  width: 100%;
 }
 
 .page-sections {
@@ -72,7 +78,7 @@ body.active {
 .nav-log {
   display: flex;
   flex-direction: column;
-  padding-right: 1%;
+  padding: 4% 2%;
 }
 
 .bar {
@@ -214,7 +220,8 @@ h1 {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  text-align: left;
+  text-align: justify;
+  padding: 2%;
 }
 
 .btn-pink {
@@ -254,4 +261,83 @@ h1 {
   height: 768px;
   left: 49%;
   border-radius: 50px 0 0 0;
+}
+
+/* Get To Know Us Section */
+
+.getToKnowUs {
+  width: 100%;
+  background-color: var(--color-pink);
+  margin: 0;
+  margin-top: 21%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 60% 60%;
+  padding: 10% 8%;
+  column-gap: 9%;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: scale(0.75);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.card {
+  width: 100%;
+  height: 157px;
+  top: 51px;
+  left: 194px;
+  border-radius: 20px;
+  gap: 6px;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  animation: show 1s ease-in-out;
+}
+
+.titleCard {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+}
+
+.titleSpan {
+  color: rgba(196, 196, 196, 1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  padding-left: 2px;
+}
+
+.cardDescription {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+}
+
+.btnYellow {
+  background-color: var(--color-yellow);
+  margin-bottom: 15%;
+  margin-top: 8%;
 }

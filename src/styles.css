@@ -341,3 +341,54 @@ h1 {
   margin-bottom: 15%;
   margin-top: 8%;
 }
+
+/* Who Is The Consultation For Section */
+.consultationFor {
+  background-color: var(--color-skyblue);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 10%;
+}
+
+.questions {
+  margin: 8%;
+  padding-top: 5%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 85%;
+  top: 1680px;
+  left: 53px;
+}
+
+.questionTitle {
+  font-family: var(--custom-baskerville-font);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+  text-align: left;
+}
+
+.answer {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+}
+
+.photoContainer {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  padding: 5%;
+  margin-bottom: 23px;
+}
+
+.photoGirl {
+  width: 90%;
+  padding-left: 5%;
+  padding-top: 0;
+}

@@ -33,4 +33,8 @@ const countdown = () => {
   const textMinute = Math.floor((remainingDays % hour) / minute);
   const textSecond = Math.floor((remainingDays % minute) / second);
 
+  document.querySelector('.days').innerText = textDay;
+  document.querySelector('.hours').innerText = textHour;
+  document.querySelector('.minutes').innerText = textMinute;
+  document.querySelector('.seconds').innerText = textSecond;
 };

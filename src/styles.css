@@ -215,6 +215,15 @@ h1 {
   margin: 0 15%;
   margin-top: 5%;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: var(--color-skyblue);
+  color: var(--color-pink);
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .btn-pink p {

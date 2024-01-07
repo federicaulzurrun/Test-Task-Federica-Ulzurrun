@@ -21,4 +21,16 @@ const countdown = () => {
   const now = new Date().getTime();
   const remainingDays = countDate - now;
 
+  // how time works
+  const second = 1000;
+  const minute = second * 60;
+  const hour = minute * 60;
+  const day = hour * 24;
+
+  // calculate using remainingDays
+  const textDay = Math.floor(remainingDays / day);
+  const textHour = Math.floor((remainingDays % day) / hour);
+  const textMinute = Math.floor((remainingDays % hour) / minute);
+  const textSecond = Math.floor((remainingDays % minute) / second);
+
 };

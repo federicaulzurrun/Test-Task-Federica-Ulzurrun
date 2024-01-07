@@ -38,12 +38,10 @@ body.active {
   top: 0;
   gap: 0;
   flex-direction: column;
-  /* opacity: 80%; */
   width: 100%;
   height: 100%;
   background-color: var(--color-yellow);
   margin-top: 50;
-  /* backdrop-filter: blur(10px); */
   text-align: left;
   transition: 0.3s;
   overflow-y: auto;
@@ -52,19 +50,20 @@ body.active {
 .nav-menu.active {
   left: 0;
   margin-top: 50px;
+  width: 88%;
 }
 
 .page-sections {
   list-style: none;
-  margin: 16px 0;
-  width: 100%;
+  margin: 0;
+  width: 80%;
 }
 
 .nav-link {
   text-decoration: none;
   transition: 0.7s ease;
   color: #fff;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 44px;
   text-transform: capitalize;
   margin-left: 28px;

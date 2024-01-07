@@ -1,8 +1,257 @@
-/* Definition of variables for colors */
+/* Definition of variables for colors and font family */
 :root {
   --color-black: #333;
   --color-white: #fff;
   --color-yellow: #ffd900;
   --color-pink: #dd71c6;
   --color-skyblue: #73c3f4;
+  --custom-baskerville-font: 'Libre Baskerville', serif;
+  --custom-montserrat-font: 'Montserrat', sans-serif;
+}
+
+* {
+  font-family: var(--custom-montserrat-font);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body.active {
+  overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-menu {
+  position: fixed;
+  left: -115%;
+  top: 0;
+  gap: 0;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-yellow);
+  margin-top: 50px;
+  text-align: left;
+  transition: 0.3s;
+  overflow-y: auto;
+}
+
+.nav-menu.active {
+  left: 0;
+  margin-top: 50px;
+  width: 88%;
+}
+
+.page-sections {
+  list-style: none;
+  margin: 0;
+  width: 80%;
+}
+
+.nav-link {
+  text-decoration: none;
+  transition: 0.7s ease;
+  color: #fff;
+  font-weight: 400;
+  line-height: 44px;
+  text-transform: capitalize;
+  margin-left: 28px;
+}
+
+.nav-log {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1%;
+}
+
+.bar {
+  display: block;
+  align-self: flex-end;
+  width: 25px;
+  height: 2px;
+  margin: 2.5px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-pink);
+}
+
+.nav-log.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.nav-log.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-log.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* Main Section */
+main {
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content.active {
+  display: none !important;
+  overflow-y: auto;
+}
+
+h1 {
+  font-family: var(--custom-baskerville-font);
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  line-height: 48px;
+  padding: 0 4%;
+  padding-top: 5%;
+}
+
+.colored-text-free {
+  font-family: var(--custom-baskerville-font);
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--color-pink);
+}
+
+.colored-text {
+  color: var(--color-pink);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: center;
+}
+
+.spots {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  margin: 0;
+}
+
+.countdown-container {
+  background: linear-gradient(107.9deg, rgba(255, 255, 255, 0.51) 9.7%, rgba(255, 255, 255, 0.49) 88.76%);
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  margin: 5%;
+  padding: 7% 7%;
+  border-radius: 30px;
+}
+
+.offer {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3%;
+  width: 100%;
+}
+
+.countdown-item {
+  width: 100%;
+}
+
+.countdown-item .time {
+  font-family: var(--custom-montserrat-font);
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 0;
+  color: #0083d3;
+  font-size: 8px;
+  line-height: 14.23px;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+  color: var(--color-black) !important;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.description {
+  padding: 3% 4.3%;
+}
+
+.spotsDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+
+.btn-pink {
+  color: var(--color-white);
+  background-color: var(--color-pink);
+  border: var(--color-pink);
+  font-family: var(--custom-montserrat-font);
+  margin: 0 15%;
+  margin-top: 5%;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: var(--color-skyblue);
+  color: var(--color-pink);
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.btn-pink p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.yellowBackground {
+  background-image: url(./assets/background-yellow.svg);
+  position: absolute;
+  right: 500px;
+  top: 0;
+  z-index: -1;
+  width: 51%;
+  height: 768px;
+  left: 49%;
+  border-radius: 50px 0 0 0;
 }

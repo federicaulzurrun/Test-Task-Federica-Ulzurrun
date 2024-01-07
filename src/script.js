@@ -2,17 +2,22 @@
 const burger = document.querySelector('.nav-log');
 const navMenu = document.querySelector('.nav-menu');
 const navbar = document.querySelector('.navbar');
+const contentCont = document.querySelector('.content');
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('active');
   navMenu.classList.toggle('active');
   navbar.classList.toggle('active');
+  contentCont.classList.toggle('active');
+  document.body.classList.toggle('active');
 });
 
 document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
   burger.classList.remove('active');
   navMenu.classList.remove('active');
   navbar.classList.remove('active');
+  contentCont.classList.remove('active');
+  document.body.classList.remove('active');
 }));
 
 // Countdown

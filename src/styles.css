@@ -392,3 +392,40 @@ h1 {
   padding-left: 5%;
   padding-top: 0;
 }
+
+/* Help You Section */
+.helpYou {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  padding-bottom: 15%;
+}
+
+.helpYouTitle {
+  font-family: var(--custom-baskerville-font);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+  text-align: left;
+  margin: 11% 0 0 8%;
+}
+
+.helpDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  padding: 0 11%;
+  padding-bottom: 10%;
+}
+
+.photoStaffCont {
+  display: flex;
+  width: 100%;
+}
+
+.staff {
+  width: 100%;
+  margin-bottom: 10%;
+}

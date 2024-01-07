@@ -3,7 +3,7 @@ const burger = document.querySelector('.nav-log');
 const navMenu = document.querySelector('.nav-menu');
 const navbar = document.querySelector('.navbar');
 
-burger.addEventListener('click', () =>{
+burger.addEventListener('click', () => {
   burger.classList.toggle('active');
   navMenu.classList.toggle('active');
   navbar.classList.toggle('active');

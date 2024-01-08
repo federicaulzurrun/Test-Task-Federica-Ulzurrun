@@ -350,6 +350,20 @@ h1 {
   margin-top: 8%;
 }
 
+.backCirclePinkR {
+  position: absolute;
+  top: 770px;
+  left: 250px;
+  width: 25%;
+}
+
+.backCirclePinkL {
+  position: absolute;
+  top: 940px;
+  left: 0;
+  width: 15%;
+}
+
 /* Who Is The Consultation For Section */
 .consultationFor {
   background-color: var(--color-skyblue);

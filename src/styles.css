@@ -1145,6 +1145,10 @@ h1 {
     padding: 5% 18%;
   }
 
+  .btnConsul {
+    width: 60%;
+  }
+
   /* FAQs Section */
   .contFAQs {
     display: flex;

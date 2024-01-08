@@ -372,7 +372,7 @@ h1 {
 
 .backCirclePinkR {
   position: absolute;
-  transform: translateY(-36%);
+  top: -1200px;
   left: 76%;
   width: 24vw;
   z-index: 1;
@@ -380,7 +380,7 @@ h1 {
 
 .backCirclePinkL {
   position: absolute;
-  transform: translateY(50%);
+  top: -1200px;
   left: 0;
   width: 15vw;
 }
@@ -442,7 +442,7 @@ h1 {
 
 .blueCircleBackR {
   position: absolute;
-  top: 370%;
+  top: -1600px;
   left: 75%;
   width: 25vw;
   z-index: 0;
@@ -450,6 +450,7 @@ h1 {
 
 /* Help You Section */
 .helpYou {
+  background-image: url(./assets/backgroundHelpM.svg);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -505,7 +506,7 @@ h1 {
 
 /* Free Consultation Section */
 .freeConsultation {
-  background-color: rgba(249, 249, 249, 1);
+  background-image:url(./assets/backgroundFreeMob.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -696,7 +697,7 @@ h1 {
 
 /* Footer */
 .footerCont {
-  background-color: rgba(249, 249, 249, 1);
+  background-image: url(./assets/backgroundFooterM.svg);
   display: flex;
   flex-direction: column;
 }
@@ -773,6 +774,20 @@ h1 {
   left: 70%;
   width: 30vw;
   height: 70vh;
+}
+
+@media screen and (min-width: 479px) {
+  .helpYou {
+    background-image: url(./assets/backgroundHelp.svg);
+  }
+
+  .freeConsultation {
+    background-image: url(./assets/./backgroundFree.svg);
+  }
+
+  .footerCont {
+    background-image: url(./assets/backgroundFooter.svg);
+  }
 }
 
 /* Media Query for screen width between 521px to 820px */
@@ -934,8 +949,23 @@ h1 {
     margin: 0 20%;
   }
 
+  /* .colorWhite {
+    position: relative;
+  }
+
+  .whiteCircleL, .whiteCircleR {
+    position: absolute;
+    top: 10%;
+    transform: translateY(-150%);
+    z-index: 1;
+  } */
+  
   .whiteCircleL {
-    transform: translateY(700px);
+    transform: translate(-50% -150%);
+  }
+  
+  .whiteCircleR {
+    right: 0;
   }
 
   /* FAQs Section */
@@ -954,7 +984,8 @@ h1 {
   }
 
   .whiteCircleFooter {
-    transform: translateY(450px);
+    position: absolute;
+    transform: translateY(40px);
     width: 35vw;
     left: 65%;
   }

@@ -790,6 +790,20 @@ h1 {
   }
 }
 
+@media (min-height: 567px) {
+  .backCirclePinkR {
+    top: -1050px;
+}
+
+  .backCirclePinkL {
+    top: -950px;
+  }
+
+  .blueCircleBackR {
+    top: -1250px;
+  }
+}
+
 /* Media Query for screen width between 521px to 820px */
 @media screen and (min-width: 521px) {
   .logoPage {
@@ -988,5 +1002,21 @@ h1 {
     transform: translateY(40px);
     width: 35vw;
     left: 65%;
+  }
+
+  .descriptionFooter {
+    font-size: 18px;
+  }
+
+  .headOffice img {
+    width: 30px;
+  }
+
+  .officeInfo, .itemsAboutF, .copyright {
+    font-size: 18px;
+  }
+
+  .aboutFooterTitle {
+    font-size: 25px;
   }
 }

@@ -129,7 +129,7 @@ h1 {
   font-size: 30px;
   text-align: center;
   line-height: 48px;
-  padding: 0 4%;
+  padding: 0 6%;
   padding-top: 5%;
 }
 
@@ -264,6 +264,13 @@ h1 {
   border-radius: 50px 0 0 0;
 }
 
+.yellowCricle {
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  width: 93%;
+}
+
 /* Get To Know Us Section */
 
 .getToKnowUs {
@@ -343,6 +350,20 @@ h1 {
   margin-top: 8%;
 }
 
+.backCirclePinkR {
+  position: absolute;
+  top: 770px;
+  left: 240px;
+  width: 25%;
+}
+
+.backCirclePinkL {
+  position: absolute;
+  top: 940px;
+  left: 0;
+  width: 15%;
+}
+
 /* Who Is The Consultation For Section */
 .consultationFor {
   background-color: var(--color-skyblue);
@@ -394,6 +415,13 @@ h1 {
   padding-top: 0;
 }
 
+.blueCircleBackR {
+  position: absolute;
+  top: 1290px;
+  left: 240px;
+  width: 25%;
+}
+
 /* Help You Section */
 .helpYou {
   display: flex;
@@ -417,7 +445,7 @@ h1 {
   font-weight: 400;
   line-height: 27px;
   text-align: left;
-  padding: 0 11%;
+  padding: 0 6%;
   padding-bottom: 10%;
 }
 
@@ -431,6 +459,15 @@ h1 {
   margin-bottom: 10%;
 }
 
+.greyCircleBackR {
+  position: absolute;
+  top: 2195px;
+  left: 144px;
+  width: 55%;
+  height: 400px;
+  z-index: -1;
+}
+
 /* Free Consultation Section */
 .freeConsultation {
   background-color: rgba(249, 249, 249, 1);
@@ -439,6 +476,7 @@ h1 {
   align-items: center;
   gap: 25px;
   padding-bottom: 10%;
+  z-index: -2;
 }
 
 .freeCons {
@@ -459,7 +497,9 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 80%;
-  padding: 12px 0 0 0;
+  padding: 20px 0 0 0;
+  margin: 10%;
+  margin-bottom: 2%;
   border-radius: 20px;
   gap: 17px;
   background-color: rgba(255, 255, 255, 1);
@@ -512,18 +552,39 @@ h1 {
   padding: 0 4%;
 }
 
+.whiteCircleL {
+  position: absolute;
+  top: 1030%;
+  left: 0;
+  width: 40%;
+  z-index: -1;
+}
+
+.whiteCircleR {
+  position: absolute;
+  top: 3520px;
+  left: 84%;
+  z-index: -1;
+}
+
 /* FAQs Section */
+.faqsTitle {
+  margin-top: 75px;
+}
 
 .dropdowns {
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 10%;
+  margin-top: 55px;
 }
 
 .dropdownSee {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .contentDrop {
@@ -570,6 +631,15 @@ h1 {
 
 .dropDesc {
   padding: 6% 0;
+}
+
+.greyCirclefaqs {
+  position: absolute;
+  top: 4350px;
+  left: 70%;
+  width: 30%;
+  height: 350px;
+  z-index: -1;
 }
 
 /* Footer */
@@ -643,4 +713,12 @@ h1 {
 
 .officeBold {
   font-weight: bold;
+}
+
+.whiteCircleFooter {
+  position: absolute;
+  top: 6200px;
+  left: 70%;
+  width: 30%;
+  height: 350px;
 }

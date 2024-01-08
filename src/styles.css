@@ -229,6 +229,7 @@ h1 {
   background-color: var(--color-pink);
   border: var(--color-pink);
   font-family: var(--custom-montserrat-font);
+  font-weight: 600;
   margin: 0 15%;
   margin-top: 5%;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
@@ -428,4 +429,85 @@ h1 {
 .staff {
   width: 100%;
   margin-bottom: 10%;
+}
+
+/* Free Consultation Section */
+.freeConsultation {
+  background-color: rgba(249, 249, 249, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding-bottom: 10%;
+}
+
+.freeCons {
+  padding: 5%;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.consultSpan {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.cardFree {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 12px 0 0 0;
+  border-radius: 20px;
+  gap: 17px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.titleCardFree {
+  color: rgba(0, 131, 211, 1);
+  font-family: var(--custom-baskerville-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: center;
+}
+
+.lineFree {
+  width: 206px;
+  height: 1px;
+  background-color: #0083d3;
+}
+
+.listsFreeCons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+.itemFreeCons {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.itemFreeCons::marker {
+  font-size: 8px;
+}
+
+.pinkTitle {
+  color: var(--color-pink);
+}
+
+.pink {
+  background-color: #dd71c6;
+}
+
+.btnConsul {
+  padding: 0 4%;
 }

@@ -266,9 +266,9 @@ h1 {
 
 .yellowCricle {
   position: absolute;
-  top: 150px;
-  left: 10px;
-  width: 93%;
+  top: 18%;
+  left: 12%;
+  width: 44.7vw;
 }
 
 /* Get To Know Us Section */
@@ -282,6 +282,12 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.contentOntopBack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cardContainer {
@@ -350,18 +356,27 @@ h1 {
   margin-top: 8%;
 }
 
+.backgroundColors {
+  position: absolute;
+  right: 378%;
+  top: 260%;
+  width: 100%;
+  left: 0;
+}
+
 .backCirclePinkR {
   position: absolute;
-  top: 770px;
-  left: 240px;
-  width: 25%;
+  transform: translateY(-36%);
+  left: 76%;
+  width: 24vw;
+  z-index: 1;
 }
 
 .backCirclePinkL {
   position: absolute;
-  top: 940px;
+  transform: translateY(50%);
   left: 0;
-  width: 15%;
+  width: 15vw;
 }
 
 /* Who Is The Consultation For Section */
@@ -415,11 +430,16 @@ h1 {
   padding-top: 0;
 }
 
+.colorBlue {
+  top: 370%;
+}
+
 .blueCircleBackR {
   position: absolute;
-  top: 1290px;
-  left: 240px;
-  width: 25%;
+  top: 370%;
+  left: 75%;
+  width: 25vw;
+  z-index: 0;
 }
 
 /* Help You Section */
@@ -437,7 +457,7 @@ h1 {
   font-weight: 400;
   line-height: 38px;
   text-align: left;
-  margin: 11% 0 0 8%;
+  margin: 11% 0 10% 8%;
 }
 
 .helpDescription {
@@ -459,14 +479,24 @@ h1 {
   margin-bottom: 10%;
 }
 
+.btnHelp {
+  margin: 0;
+  align-self: center;
+}
+
+.colorGrey {
+  top: 640%;
+  position: absolute;
+}
+
 .greyCircleBackR {
   position: absolute;
-  top: 2195px;
-  left: 144px;
-  width: 55%;
-  height: 400px;
+  top: 655%;
+  left: 35%;
+  width: 65vw;
   z-index: -1;
 }
+
 
 /* Free Consultation Section */
 .freeConsultation {
@@ -476,7 +506,15 @@ h1 {
   align-items: center;
   gap: 25px;
   padding-bottom: 10%;
-  z-index: -2;
+  padding-left: 10%;
+  padding-right: 10%;
+  z-index: 2;
+}
+
+.freeContent {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .freeCons {
@@ -496,9 +534,8 @@ h1 {
   align-self: center;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   padding: 20px 0 0 0;
-  margin: 10%;
   margin-bottom: 2%;
   border-radius: 20px;
   gap: 17px;
@@ -550,22 +587,32 @@ h1 {
 
 .btnConsul {
   padding: 0 4%;
+  margin: 0;
+}
+
+.colorWhite {
+  top: 980%;
+  left: 0%;
+  z-index: -1;
 }
 
 .whiteCircleL {
   position: absolute;
-  top: 1030%;
+  top: 850%;
   left: 0;
-  width: 40%;
-  z-index: -1;
+  margin-top: 10%;
+  width: 40vw;
 }
 
 .whiteCircleR {
   position: absolute;
-  top: 3520px;
+  top: 1150%;
   left: 84%;
+  width: 15vw;
   z-index: -1;
+  transform: translateY(55%);
 }
+
 
 /* FAQs Section */
 .faqsTitle {
@@ -634,11 +681,12 @@ h1 {
 }
 
 .greyCirclefaqs {
+  margin-top: 10%;
   position: absolute;
-  top: 4350px;
+  top: 1270%; 
   left: 70%;
-  width: 30%;
-  height: 350px;
+  width: 30vw;
+  height: 60vh;
   z-index: -1;
 }
 
@@ -650,17 +698,17 @@ h1 {
 }
 
 .logoFooterImg {
-  width: 60%;
-  padding: 10%;
+  width: 50%;
+  padding: 8%;
 }
 
 .descriptionFooter {
-  width: 300px;
+  width: 90%;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   text-align: left;
-  padding: 10%;
+  padding: 8%;
 }
 
 .headOffice {
@@ -691,7 +739,7 @@ h1 {
   font-weight: 400;
   line-height: 22px;
   text-align: left;
-  margin: 15% 0;
+  margin: 12% 0;
 }
 
 .socialsIcons {
@@ -717,8 +765,8 @@ h1 {
 
 .whiteCircleFooter {
   position: absolute;
-  top: 6200px;
+  top: 1870%;
   left: 70%;
-  width: 30%;
-  height: 350px;
+  width: 30vw;
+  height: 70vh;
 }

@@ -555,7 +555,7 @@ h1 {
 .whiteCircleL {
   position: absolute;
   top: 1030%;
-  left: 0px;
+  left: 0;
   width: 40%;
   z-index: -1;
 }
@@ -568,12 +568,16 @@ h1 {
 }
 
 /* FAQs Section */
+.faqsTitle {
+  margin-top: 75px;
+}
 
 .dropdowns {
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 10%;
+  margin-top: 55px;
 }
 
 .dropdownSee {
@@ -627,6 +631,15 @@ h1 {
 
 .dropDesc {
   padding: 6% 0;
+}
+
+.greyCirclefaqs {
+  position: absolute;
+  top: 4350px;
+  left: 70%;
+  width: 30%;
+  height: 350px;
+  z-index: -1;
 }
 
 /* Footer */

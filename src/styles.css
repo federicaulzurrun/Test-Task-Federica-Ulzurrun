@@ -129,7 +129,7 @@ h1 {
   font-size: 30px;
   text-align: center;
   line-height: 48px;
-  padding: 0 4%;
+  padding: 0 6%;
   padding-top: 5%;
 }
 
@@ -262,6 +262,13 @@ h1 {
   height: 768px;
   left: 49%;
   border-radius: 50px 0 0 0;
+}
+
+.yellowCricle {
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  width: 93%;
 }
 
 /* Get To Know Us Section */
@@ -524,6 +531,8 @@ h1 {
 .dropdownSee {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .contentDrop {

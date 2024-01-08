@@ -511,3 +511,63 @@ h1 {
 .btnConsul {
   padding: 0 4%;
 }
+
+/* FAQs Section */
+
+.dropdowns {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10%;
+}
+
+.dropdownSee {
+  display: flex;
+  flex-direction: row;
+}
+
+.contentDrop {
+  display: none;
+}
+
+.dropdownCard {
+  background-color: rgba(249, 249, 249, 1);
+  padding: 5% 3%;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 5%;
+}
+
+.dropdownCard.active {
+  flex-direction: column;
+}
+
+.dropdownCard.active .contentDrop {
+  display: block;
+}
+
+.dropdown-title {
+  align-self: center;
+}
+
+.arrow {
+  cursor: pointer;
+  align-self: center;
+}
+
+.dropdownCard.active .arrow img {
+  transform: rotate(180deg);
+}
+
+.lineFaq {
+  display: flex;
+  height: 2px;
+  width: 100%;
+}
+
+.dropDesc {
+  padding: 6% 0;
+}

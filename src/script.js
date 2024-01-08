@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 // Burger menu
 const burger = document.querySelector('.nav-log');
 const navMenu = document.querySelector('.nav-menu');
@@ -45,3 +46,21 @@ const countdown = () => {
 };
 
 setInterval(countdown, 1000);
+
+const arrows = document.querySelectorAll('.arrow');
+
+arrows.forEach((arrow) => {
+  arrow.addEventListener('click', () => {
+    const dropdownCard = arrow.closest('.dropdownCard');
+
+    dropdownCard.classList.toggle('active');
+
+    const dropdownContent = dropdownCard.querySelector('.contentDrop');
+
+    dropdownContent.classList.toggle('active');
+
+    const isOpen = dropdownContent.classList.contains('active');
+
+    dropdownContent.style.display = isOpen ? 'block' : 'none';
+  });
+});

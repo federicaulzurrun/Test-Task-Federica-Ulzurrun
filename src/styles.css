@@ -714,3 +714,11 @@ h1 {
 .officeBold {
   font-weight: bold;
 }
+
+.whiteCircleFooter {
+  position: absolute;
+  top: 6200px;
+  left: 70%;
+  width: 30%;
+  height: 350px;
+}

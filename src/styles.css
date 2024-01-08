@@ -372,7 +372,7 @@ h1 {
 
 .backCirclePinkR {
   position: absolute;
-  top: -1200px;
+  top: -500px;
   left: 76%;
   width: 24vw;
   z-index: 1;
@@ -380,7 +380,7 @@ h1 {
 
 .backCirclePinkL {
   position: absolute;
-  top: -1200px;
+  top: -400px;
   left: 0;
   width: 15vw;
 }
@@ -442,7 +442,7 @@ h1 {
 
 .blueCircleBackR {
   position: absolute;
-  top: -1600px;
+  top: -600px;
   left: 75%;
   width: 25vw;
   z-index: 0;

@@ -571,3 +571,76 @@ h1 {
 .dropDesc {
   padding: 6% 0;
 }
+
+/* Footer */
+.footerCont {
+  background-color: rgba(249, 249, 249, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.logoFooterImg {
+  width: 60%;
+  padding: 10%;
+}
+
+.descriptionFooter {
+  width: 300px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  padding: 10%;
+}
+
+.headOffice {
+  display: flex;
+  flex-direction: row;
+  margin: 5% 10%;
+  gap: 10%;
+}
+
+.aboutFooter {
+  margin: 10%;
+  margin-bottom: 3%;
+  padding-left: 0;
+}
+
+.aboutFooterTitle {
+  font-family: var(--custom-baskerville-font);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.itemsAboutF {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  margin: 15% 0;
+}
+
+.socialsIcons {
+  width: 132px;
+  height: 30px;
+  top: 6702px;
+  left: 17px;
+  margin: 0 5%;
+}
+
+.copyright {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  margin: 5%;
+  padding-top: 6%;
+}
+
+.officeBold {
+  font-weight: bold;
+}

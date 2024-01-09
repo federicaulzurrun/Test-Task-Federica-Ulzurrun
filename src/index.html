@@ -34,7 +34,7 @@
     <div class="content">
       <h1>Chicago’s <span class="colored-text-free">Free</span> Medical Check-Up and Weight Loss Consultation</h1>
       <p class="spots">Only <span class="colored-text">11</span> spots available!</p>
-      <div class="countdown-container">
+      <div class="countdown-container countdown1">
         <p class="offer">Your offer ends in:</p>
         <div class="countdown">
           <div id="days" class="countdown-item">
@@ -58,7 +58,7 @@
       <div class="description">
         <p class="spotsDescription">There are limited spots due to the Physicians schedule and the high demand for service. No credit card or insurance required.</p>
       </div>
-      <button class="btn-pink" type="button">
+      <button class="btn-pink btnYellowB" type="button">
         <p>Book my appointment</p>
       </button>
     </div>
@@ -114,18 +114,20 @@
 
   <!-- Who is the Consultation For Section-->
   <div class="consultationFor">
-    <div class="contentOntopBack">
-      <div class="questions">
-        <h3 class="questionTitle">Who Is The Consultation For?</h3>
-        <p class="answer">Chicago’s free medical check-up and weight loss consultation is for Chicago residents who are looking to lose weight so they can live a long, vibrant and healthy life, while looking good and not breaking the bank.</p>
+    <div class="contentOntopBack consultCont">
+      <div class="consult">
+        <div class="questions">
+          <h3 class="questionTitle">Who Is The Consultation For?</h3>
+          <p class="answer">Chicago’s free medical check-up and weight loss consultation is for Chicago residents who are looking to lose weight so they can live a long, vibrant and healthy life, while looking good and not breaking the bank.</p>
+        </div>
+        <div class="questions">
+          <h3 class="questionTitle">How Does It Work?</h3>
+          <p class="answer">In this exam a certified nurse or physician will do various tests to check your overall health level and find which easy-to-do physician-supervised weight loss program will work best for you.</p>
+        </div>
+        <button class="btn-pink consulFor" type="button">
+          <p>Book my appointment</p>
+        </button>
       </div>
-      <div class="questions">
-        <h3 class="questionTitle">How Does It Work?</h3>
-        <p class="answer">In this exam a certified nurse or physician will do various tests to check your overall health level and find which easy-to-do physician-supervised weight loss program will work best for you.</p>
-      </div>
-      <button class="btn-pink consulFor" type="button">
-        <p>Book my appointment</p>
-      </button>
       <div class="photoContainer">
         <img class="photoGirl" src="./assets/girl-headphones.svg" alt="a girl with headphones">
       </div>
@@ -144,7 +146,7 @@
         it’s easy to lose hope. We have seen so many tricks, gimmicks and weight loss programs that simply do not work for us.
         They want us to eat like a pigeon, avoid all the things we love to eat and work out till we cry. 
         </p>
-      <p class="helpDescription">
+      <p class="helpDescription deleteBig">
         We are here to tell you that it doesn’t have to be that way. There is hope! Technology has advanced rapidly in recent years and now, with proper guidance... 
       </p>
       <div class="photoStaffCont">
@@ -154,36 +156,39 @@
         You can join the ranks of our over 15,000 satisfied clients who have lost weight, regained their confidence and are living happy exuberant lives with their family. They did this without: breaking the bank, sweating buckets in intense workout programs, and most importantly, without giving up ice-cream, bread, pizza, doughnuts and all their favorite foods.
       </p>
       <button class="btn-pink btnHelp" type="button">
-        <p>See patient stories</p>
+        <p class="deleteBig">See patient stories</p>
+        <p class="showBig">Book my appointment</p>
       </button>
+      <div class="photoStaffCont">
+        <img src="./assets/peopleHelpYou.svg" alt="" class="staffBig">
+      </div>
     </div>
-    <!-- <div class="backgroundColors colorGrey">
-      <img src="./assets/greyCircle.svg" alt="" class="greyCircleBackR">
-    </div> -->
   </div>
 
   <!-- Free Consultation -->
   <div class="freeConsultation">
     <div class="contentOntopBack freeContent">
       <h3 class="helpYouTitle freeCons">What You’ll Get At Your <span class="colored-text-free consultSpan">Free</span> Consultation</h3>
-      <div class="cardFree">
-        <h5 class="titleCardFree">Body Mass Index</h5>
-        <span class="lineFree"></span>
-        <ul class="listsFreeCons">
-          <li class="itemFreeCons">Complete understanding of your body composition</li>
-          <li class="itemFreeCons">A clear view of your weight loss goals</li>
-          <li class="itemFreeCons">Clear data to help you make an informed decision about your health</li>
-        </ul>
-      </div>
-      <div class="cardFree">
-        <h5 class="titleCardFree pinkTitle">Vital Signs Check</h5>
-        <span class="lineFree pink"></span>
-        <ul class="listsFreeCons">
-          <li class="itemFreeCons">Body temperature</li>
-          <li class="itemFreeCons">Pulse rate, heart's rate, rhythm and regularity</li>
-          <li class="itemFreeCons">Breathing rate</li>
-          <li class="itemFreeCons">Blood pressure</li>
-        </ul>
+      <div class="cardBig">
+        <div class="cardFree">
+          <h5 class="titleCardFree">Body Mass Index</h5>
+          <span class="lineFree"></span>
+          <ul class="listsFreeCons bigS">
+            <li class="itemFreeCons">Complete understanding of your body composition</li>
+            <li class="itemFreeCons">A clear view of your weight loss goals</li>
+            <li class="itemFreeCons">Clear data to help you make an informed decision about your health</li>
+          </ul>
+        </div>
+        <div class="cardFree">
+          <h5 class="titleCardFree pinkTitle">Vital Signs Check</h5>
+          <span class="lineFree pink"></span>
+          <ul class="listsFreeCons">
+            <li class="itemFreeCons">Body temperature</li>
+            <li class="itemFreeCons">Pulse rate, heart's rate, rhythm and regularity</li>
+            <li class="itemFreeCons">Breathing rate</li>
+            <li class="itemFreeCons">Blood pressure</li>
+          </ul>
+        </div>
       </div>
       <button class="btn-pink btnConsul" type="button">
         <p>Book my appointment</p>
@@ -336,39 +341,43 @@
 
   <!-- Footer -->
   <div class="footerCont">
-    <div class="logoFooter">
-      <img src="./assets/logo.svg" alt="Brand Logo" class="logoFooterImg">
-    </div>
-    <p class="descriptionFooter">A Better Weigh Medical Weight Loss Center offers a weight loss program dedicated to helping you achieve long term weight loss success with the use of FDA approved medication.</p>
-    <div class="headOffice">
-      <img src="./assets/location.svg" alt="Location pin">
-      <p class="officeInfo">
-        <span class="officeBold">Head Office:</span><br> 1931 W 95th Streeet Chicago IL, 60643
-      </p>
-    </div>
-    <div class="headOffice">
-      <img src="./assets/phone.svg" alt="cellphone">
-      <p class="officeInfo">
-        <span class="officeBold">Phone:</span><br> 773-496-4222
-      </p>
-    </div>
-    <div class="listFooter">
-      <ul class="aboutFooter">
-        <h4 class="aboutFooterTitle">About</h4>
-        <li class="itemsAboutF">About Us</li>
-        <li class="itemsAboutF">Book Online</li>
-        <li class="itemsAboutF">Locations</li>
-        <li class="itemsAboutF">Real Patient Stories</li>
-        <li class="itemsAboutF">Weight Loss Programs</li>
-      </ul>
-      <ul class="aboutFooter">
-        <h4 class="aboutFooterTitle">More Links</h4>
-        <li class="itemsAboutF">Franchise Opportunities</li>
-        <li class="itemsAboutF">Career Opportunities</li>
-        <li class="itemsAboutF">Privacy Policy</li>
-        <li class="itemsAboutF">Terms & Conditions</li>
-        <li class="itemsAboutF">Return Policy</li>
-      </ul>
+    <div class="footerTwo">
+      <div class="contFootBig">
+        <div class="logoFooter">
+          <img src="./assets/logo.svg" alt="Brand Logo" class="logoFooterImg">
+        </div>
+        <p class="descriptionFooter">A Better Weigh Medical Weight Loss Center offers a weight loss program dedicated to helping you achieve long term weight loss success with the use of FDA approved medication.</p>
+        <div class="headOffice">
+          <img src="./assets/location.svg" alt="Location pin">
+          <p class="officeInfo">
+            <span class="officeBold">Head Office:</span><br> 1931 W 95th Streeet Chicago IL, 60643
+          </p>
+        </div>
+        <div class="headOffice">
+          <img src="./assets/phone.svg" alt="cellphone">
+          <p class="officeInfo">
+            <span class="officeBold">Phone:</span><br> 773-496-4222
+          </p>
+        </div>
+      </div>
+      <div class="listFooter">
+        <ul class="aboutFooter">
+          <h4 class="aboutFooterTitle">About</h4>
+          <li class="itemsAboutF">About Us</li>
+          <li class="itemsAboutF">Book Online</li>
+          <li class="itemsAboutF">Locations</li>
+          <li class="itemsAboutF">Real Patient Stories</li>
+          <li class="itemsAboutF">Weight Loss Programs</li>
+        </ul>
+        <ul class="aboutFooter">
+          <h4 class="aboutFooterTitle">More Links</h4>
+          <li class="itemsAboutF">Franchise Opportunities</li>
+          <li class="itemsAboutF">Career Opportunities</li>
+          <li class="itemsAboutF">Privacy Policy</li>
+          <li class="itemsAboutF">Terms & Conditions</li>
+          <li class="itemsAboutF">Return Policy</li>
+        </ul>
+      </div>
     </div>
     <div class="endFooter">
       <img src="./assets/socials.svg" alt="social media icons" class="socialsIcons">

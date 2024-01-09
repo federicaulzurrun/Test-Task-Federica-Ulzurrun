@@ -490,6 +490,11 @@ h1 {
   margin-bottom: 10%;
 }
 
+.staffBig,
+.showBig {
+  display: none;
+}
+
 .btnHelp {
   margin: 0;
   align-self: center;
@@ -521,7 +526,8 @@ h1 {
   z-index: 2;
 }
 
-.freeContent {
+.freeContent,
+.cardBig {
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -791,6 +797,7 @@ h1 {
 
   .freeConsultation {
     background-image: url(./assets/./backgroundFree.svg);
+    background-size: cover;
   }
 
   .footerCont {
@@ -1067,9 +1074,9 @@ h1 {
   }
 
   .yellowBackground {
-    background-image: url(./assets/yellowbak820.svg);
+    background-image: url(./assets/yellowback1200.svg);
     height: 1300px;
-    top: -190px;
+    top: 90px;
     background-repeat: no-repeat;
     overflow: hidden;
     position: absolute;
@@ -1138,6 +1145,17 @@ h1 {
 
   .btnHelp {
     width: 40%;
+    margin: 2%;
+  }
+
+  .helpDescription {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    text-align: center;
+  }
+
+  .staffBig {
+    display: none;
   }
 
   /* Free Consultation Section */
@@ -1238,5 +1256,278 @@ h1 {
 
   .aboutFooterTitle {
     font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 0;
+    top: 0;
+    gap: 0;
+    width: 100%;
+    height: 10%;
+    background-color: transparent !important;
+    margin-top: 0;
+    text-align: right !important;
+    transition: none;
+    overflow-y: auto;
+    align-self: flex-end;
+    padding-left: 0;
+    padding-bottom: 50px;
+  }
+
+  .page-sections {
+    width: 12%;
+  }
+
+  .page-sections a {
+    color: #333;
+    margin: 0;
+    text-align: left;
+    justify-content: left;
+    font-size: 0.9vw;
+  }
+
+  .nav-log {
+    display: none;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .yellowBackground {
+    top: 110px;
+  }
+
+  .backCirclePinkR {
+    width: 10vw;
+    left: 90%;
+    top: -100px;
+  }
+
+  .backCirclePinkL {
+    width: 10vw;
+    top: -100px;
+  }
+
+  .consultCont {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 0;
+    width: 73%;
+    gap: 10%;
+  }
+
+  .consult {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .questions {
+    margin: 0;
+    padding: 1% !important;
+  }
+
+  .answer {
+    padding-left: 0 !important;
+  }
+
+  .photoContainer {
+    width: 100%;
+  }
+
+  .photoGirl {
+    width: 200%;
+  }
+
+  .freeConsultation {
+    background-size: cover;
+    padding-bottom: 0;
+  }
+
+  .questions,
+  .answer {
+    padding: 5%;
+    margin-bottom: 0;
+  }
+
+  .consulFor {
+    width: 60%;
+  }
+
+  .blueCircleBackR {
+    width: 12vw;
+    left: 88%;
+    top: -100px;
+  }
+
+  .helpYou {
+    background-size: cover;
+  }
+
+  .helpDescription {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  .deleteBig {
+    display: none;
+  }
+
+  .photoStaffCont {
+    justify-content: center;
+  }
+
+  .staffBig {
+    justify-content: center;
+    width: 80%;
+    display: flex;
+  }
+
+  .staff {
+    display: none;
+  }
+
+  .showBig {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .freeContent {
+    padding: 5% 2%;
+    padding-bottom: 0;
+  }
+
+  .freeCons {
+    padding: 2%;
+    margin-bottom: 0;
+  }
+
+  .cardBig {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .cardFree {
+    margin: 5%;
+    padding: 5%;
+  }
+
+  .bigS {
+    padding: 0;
+  }
+
+  .contFAQs {
+    background-image: url(./assets/backFAQmas.svg);
+    padding-top: 0;
+  }
+
+  .faqsTitle {
+    padding-right: 0;
+  }
+
+  .contFootBig {
+    width: 50%;
+  }
+
+  .listFooter {
+    padding-top: 10%;
+    width: 50%;
+  }
+
+  .endFooter {
+    justify-content: space-between;
+  }
+
+  .footerCont {
+    flex-direction: column;
+  }
+
+  .footerTwo {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .yellowBackground {
+    background-image: url(./assets/yellowbackbigger.svg);
+    top: 200px;
+    left: 57%;
+    width: 43%;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  h1 {
+    transform: translate(300px, 50px);
+    width: 40%;
+  }
+
+  .spots { display: none; }
+
+  .description {
+    transform: translate(160px, -50px);
+    width: 100%;
+    padding: 0;
+  }
+
+  .countdown-container {
+    transform: translate(-180px, 140px);
+    margin: 5%;
+    width: 60%;
+    height: 300px;
+    margin-left: 15%;
+    grid-column: 2;
+  }
+
+  .offer {
+    font-size: 22px;
+  }
+
+  .countdown {
+    margin: 1%;
+  }
+
+  .countdown-item {
+    text-align: center;
+    min-width: 60px;
+    min-height: 80px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .time {
+    margin: 0;
+  }
+
+  .countdown-item .time {
+    font-size: 20px;
+    padding-top: 40%;
+  }
+
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 46px;
+    padding-top: 30%;
+  }
+
+  .btnYellowB {
+    grid-column: 1;
+    transform: translate(290px, -70px);
   }
 }

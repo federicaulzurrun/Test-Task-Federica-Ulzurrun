@@ -83,7 +83,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="https://federicaulzurrun.github.io/Test-Task-Federica-Ulzurrun/"> Visit the site!</a>
+- <a href="https://flourishing-kleicha-b54853.netlify.app/"> Visit the site!</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -193,6 +193,25 @@ h1 {
   width: 100%;
 }
 
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(5deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+.countdown:hover {
+  animation: wiggle 1s ease-in-out 2;
+}
+
 .countdown-item {
   width: 100%;
 }
@@ -281,6 +300,10 @@ h1 {
   width: 44.7vw;
 }
 
+.whiteCircleLM {
+  display: none;
+}
+
 /* Get To Know Us Section */
 
 .getToKnowUs {
@@ -292,6 +315,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .contentOntopBack {
@@ -334,6 +358,9 @@ h1 {
   text-align: center;
   align-items: center;
   padding: 0;
+}
+
+.card:hover {
   animation: show 1s ease-in-out;
 }
 
@@ -367,7 +394,7 @@ h1 {
 }
 
 .backgroundColors {
-  position: absolute;
+  position: relative;
   right: 378%;
   top: 260%;
   width: 100%;
@@ -376,7 +403,7 @@ h1 {
 
 .backCirclePinkR {
   position: absolute;
-  top: -500px;
+  top: -400px;
   left: 76%;
   width: 24vw;
   z-index: 1;
@@ -384,7 +411,7 @@ h1 {
 
 .backCirclePinkL {
   position: absolute;
-  top: -400px;
+  top: -300px;
   left: 0;
   width: 15vw;
 }
@@ -397,6 +424,22 @@ h1 {
   flex-direction: column;
   gap: 30px;
   padding-top: 10%;
+  position: relative;
+}
+
+@keyframes pulsate {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.consultCont:hover {
+  animation: pulsate 1.5s ease-in-out 1;
 }
 
 .questions {
@@ -446,7 +489,7 @@ h1 {
 
 .blueCircleBackR {
   position: absolute;
-  top: -600px;
+  top: -900px;
   left: 75%;
   width: 25vw;
   z-index: 0;
@@ -460,6 +503,7 @@ h1 {
   width: 100%;
   gap: 15px;
   padding-bottom: 15%;
+  background-size: cover;
 }
 
 .helpYouTitle {
@@ -498,19 +542,6 @@ h1 {
 .btnHelp {
   margin: 0;
   align-self: center;
-}
-
-.colorGrey {
-  top: 640%;
-  position: absolute;
-}
-
-.greyCircleBackR {
-  position: absolute;
-  top: 655%;
-  left: 35%;
-  width: 65vw;
-  z-index: -1;
 }
 
 /* Free Consultation Section */
@@ -581,6 +612,28 @@ h1 {
   padding-bottom: 30px;
 }
 
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.listsFreeCons:hover {
+  animation: bounce 1.5s 1;
+}
+
 .itemFreeCons {
   font-size: 14px;
   font-weight: 400;
@@ -632,6 +685,11 @@ h1 {
 /* FAQs Section */
 .faqsTitle {
   margin-top: 75px;
+}
+
+.contFAQs {
+  background-image: url(./assets/backFAQs.svg);
+  background-size: cover;
 }
 
 .dropdowns {
@@ -791,10 +849,6 @@ h1 {
 }
 
 @media screen and (min-width: 479px) {
-  .helpYou {
-    background-image: url(./assets/backgroundHelp.svg);
-  }
-
   .freeConsultation {
     background-image: url(./assets/./backgroundFree.svg);
     background-size: cover;
@@ -805,21 +859,7 @@ h1 {
   }
 }
 
-@media (min-height: 567px) {
-  .backCirclePinkR {
-    top: -1050px;
-  }
-
-  .backCirclePinkL {
-    top: -950px;
-  }
-
-  .blueCircleBackR {
-    top: -1250px;
-  }
-}
-
-/* Media Query for screen width between 521px to 820px */
+/* Media Query for screen width between 521px */
 @media screen and (min-width: 521px) {
   .logoPage {
     padding-left: 5%;
@@ -918,12 +958,20 @@ h1 {
   }
 
   .backCirclePinkR {
-    transform: translateY(10px);
     width: 18vw;
     left: 82%;
   }
 
+  .backCirclePinkL {
+    width: 12vw;
+  }
+
   /* Who is the consultation for? Section */
+  .consult {
+    display: flex;
+    flex-direction: column;
+  }
+
   .questions {
     padding: 5% 10%;
     margin-bottom: 3%;
@@ -940,7 +988,11 @@ h1 {
   .blueCircleBackR {
     left: 80%;
     width: 20vw;
-    transform: translateY(200px);
+    top: -1100px;
+  }
+
+  .consulFor {
+    align-self: center;
   }
 
   /* Help you Section */
@@ -999,7 +1051,6 @@ h1 {
 
   .whiteCircleFooter {
     position: absolute;
-    transform: translateY(40px);
     width: 35vw;
     left: 65%;
   }
@@ -1113,9 +1164,19 @@ h1 {
     width: 40%;
   }
 
+  .backCirclePinkR {
+    width: 13vw;
+    left: 87%;
+  }
+
+  .backCirclePinkL {
+    width: 10vw;
+  }
+
   /* Consultation For Section */
   .consultationFor {
     padding: 5% 12%;
+    background-image: url(./assets/consulForSecndBack.svg);
   }
 
   .answer {
@@ -1136,7 +1197,16 @@ h1 {
     padding: 0;
   }
 
+  .blueCircleBackR {
+    display: none;
+  }
+
   /* Help You Section */
+  .helpYou {
+    background-image: url(./assets/backgroundHelp.svg);
+    background-size: cover;
+  }
+
   .helpYouTitle,
   .consultSpan,
   .questionTitle {
@@ -1209,8 +1279,6 @@ h1 {
   }
 
   .whiteCircleFooter {
-    position: absolute;
-    transform: translateY(40px);
     width: 35vw;
     left: 65%;
   }
@@ -1267,7 +1335,7 @@ h1 {
     left: 0;
     top: 0;
     gap: 0;
-    width: 100%;
+    width: 80%;
     height: 10%;
     background-color: transparent !important;
     margin-top: 0;
@@ -1279,8 +1347,18 @@ h1 {
     padding-bottom: 50px;
   }
 
+  .nav-menu li {
+    text-align: left;
+    width: 70%;
+  }
+
   .page-sections {
-    width: 12%;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 10px;
+    margin-left: 0;
+    align-self: flex-start;
+    z-index: 4;
   }
 
   .page-sections a {
@@ -1303,23 +1381,38 @@ h1 {
     top: 110px;
   }
 
+  .contentOntopBack {
+    width: 100%;
+  }
+
+  .cardContainer {
+    width: 60%;
+  }
+
+  .btnYellow {
+    margin: 5%;
+  }
+
   .backCirclePinkR {
-    width: 10vw;
-    left: 90%;
-    top: -100px;
+    width: 11vw;
+    left: 89%;
   }
 
   .backCirclePinkL {
-    width: 10vw;
-    top: -100px;
+    width: 8vw;
+  }
+
+  .consultationFor {
+    background-image: url(./assets/consulForBiggerB.svg);
+    background-size: cover;
   }
 
   .consultCont {
     display: flex;
     flex-direction: row;
     padding: 5% 0;
-    width: 73%;
-    gap: 10%;
+    width: 100%;
+    gap: 5%;
   }
 
   .consult {
@@ -1347,6 +1440,8 @@ h1 {
   .freeConsultation {
     background-size: cover;
     padding-bottom: 0;
+    background-image: url(./assets/freeBigBack.svg);
+    background-color: rgba(249, 249, 249, 1);
   }
 
   .questions,
@@ -1356,17 +1451,19 @@ h1 {
   }
 
   .consulFor {
+    display: flex;
     width: 60%;
+    align-self: flex-start;
+    justify-content: center;
   }
 
   .blueCircleBackR {
-    width: 12vw;
-    left: 88%;
-    top: -100px;
+    display: none;
   }
 
   .helpYou {
-    background-size: cover;
+    background-image: none;
+    background-color: rgba(255, 255, 255, 1);
   }
 
   .helpDescription {
@@ -1424,7 +1521,8 @@ h1 {
   }
 
   .contFAQs {
-    background-image: url(./assets/backFAQmas.svg);
+    background-image: url(./assets/FAQsBigBack.svg);
+    background-size: cover;
     padding-top: 0;
   }
 
@@ -1456,39 +1554,128 @@ h1 {
 }
 
 @media screen and (min-width: 1360px) {
+  html {
+    background-color: rgba(249, 249, 249, 1);
+  }
+
+  .logoPage {
+    margin-left: 15%;
+    padding-top: 2%;
+  }
+
+  .navbar {
+    align-items: start;
+    justify-content: left;
+    height: 100px;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    width: 60%;
+    height: 10%;
+    margin-top: 0;
+    padding-left: 7%;
+    padding-bottom: 50px;
+    background-color: transparent !important;
+    text-align: right !important;
+    align-self: center;
+    justify-content: flex-start;
+    z-index: 40;
+  }
+
+  .nav-menu li {
+    text-align: left;
+    width: fit-content;
+    z-index: 15;
+  }
+
+  .page-sections {
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 10px;
+    margin-left: 0;
+    align-self: flex-start;
+    z-index: 4;
+  }
+
+  .page-sections a {
+    display: inline-flex;
+    width: 70%;
+    align-self: flex-start;
+  }
+
   .yellowBackground {
     background-image: url(./assets/yellowbackbigger.svg);
-    top: 200px;
-    left: 57%;
-    width: 43%;
+    top: 0;
+    left: 76%;
+    width: 24%;
+    z-index: -1;
   }
 
   .content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 15%);
+    grid-gap: 15px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    padding: 2% 10%;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .greyCircleMain {
+    display: none;
   }
 
   h1 {
-    transform: translate(300px, 50px);
-    width: 40%;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 3;
+    padding: 0;
+    padding-left: 20%;
+    width: 80%;
   }
 
-  .spots { display: none; }
+  .spots {
+    display: none;
+  }
 
   .description {
-    transform: translate(160px, -50px);
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    grid-template-rows: auto;
     width: 100%;
+    padding-left: 27.5%;
+    padding-right: 0;
+  }
+
+  .spotsDescription {
     padding: 0;
+    width: 90%;
+    font-size: 16px;
   }
 
   .countdown-container {
-    transform: translate(-180px, 140px);
+    grid-column: 3 / span 3;
+    grid-row: 1 / span 4;
     margin: 5%;
-    width: 60%;
+    width: 100%;
     height: 300px;
-    margin-left: 15%;
-    grid-column: 2;
+    margin-left: 50%;
+    margin-top: 8%;
+    padding: 12% 5%;
+  }
+
+  .btnYellowB {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+    margin-left: 20%;
+    margin-top: 10%;
+    width: 32%;
   }
 
   .offer {
@@ -1526,8 +1713,111 @@ h1 {
     padding-top: 30%;
   }
 
-  .btnYellowB {
-    grid-column: 1;
-    transform: translate(290px, -70px);
+  .getToKnowUs {
+    padding-top: 3%;
+    background-image: url(./assets/pinkBack1000.svg);
+    background-size: cover;
+  }
+
+  .cardContainer {
+    width: 60%;
+    margin: 0;
+  }
+
+  .card {
+    height: 230px;
+    gap: 8%;
+    padding: 0 3%;
+  }
+
+  .emojiCont {
+    width: 100%;
+  }
+
+  .emoji {
+    width: 23%;
+  }
+
+  .cardDescription {
+    font-size: 16.3px;
+  }
+
+  .backCirclePinkR,
+  .backCirclePinkL {
+    display: none;
+  }
+
+  .btnYellow {
+    margin-top: 3%;
+    width: 20%;
+  }
+
+  .whiteCircleLM {
+    display: inline;
+    position: absolute;
+    top: 100px;
+  }
+
+  .consultationFor {
+    padding: 7% 20%;
+  }
+
+  .consultCont {
+    padding-bottom: 0;
+    gap: 2%;
+  }
+
+  .consulFor {
+    margin-bottom: 0;
+    width: 40%;
+  }
+
+  .freeContent {
+    gap: 12px;
+  }
+
+  .titleCardFree {
+    font-size: 24px;
+  }
+
+  .itemFreeCons {
+    font-size: 18px;
+  }
+
+  .btnHelp {
+    width: 18%;
+  }
+
+  .dropdowns {
+    padding: 2% 8%;
+  }
+
+  .contFAQs {
+    background-color: #fff;
+    padding-bottom: 0;
+  }
+
+  .btnConsul {
+    margin-bottom: 2%;
+    width: 25.5%;
+  }
+
+  .btnDrop {
+    width: 25.5%;
+  }
+
+  .footerCont {
+    padding-top: 2%;
+    padding-bottom: 1%;
+  }
+
+  .footerTwo,
+  .endFooter {
+    width: 80%;
+    align-self: center;
+  }
+
+  .endFooter {
+    height: 50px;
   }
 }

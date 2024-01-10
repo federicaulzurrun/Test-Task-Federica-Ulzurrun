@@ -1345,6 +1345,7 @@ h1 {
     align-self: flex-end;
     padding-left: 0;
     padding-bottom: 50px;
+    overflow: hidden;
   }
 
   .nav-menu li {
